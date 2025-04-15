@@ -8,14 +8,29 @@ public class GetNumericPartFromString {
 	 */
 
 	public void getNumericValue(String inputString) {
-
+		inputString = inputString.toLowerCase();
+		// int count = 0;
 		for (int i = 0; i < inputString.length(); i++) {
 			char c = inputString.charAt(i);
-			if ((int) c >= 48 && (int) c < 57) {
-				System.out.println(c);
+			if ((int) c >= 97 && (int) c <= 122) { // c/y = 121
+
+				System.out.print(c);
+				// count++;
+
+			} else if ((i > 0) && !((int) c >= 48 && (int) c <= 57) // i > 0 why ? control comes in this block
+
+			// only when c is not an
+
+			// integer in the first if condition
+
+					&& ((int) inputString.charAt(i - 1) >= 48
+
+							&& (int) inputString.charAt(i - 1) <= 57)) {
+
+				System.out.print(" ");
+
 			}
 		}
-
 	}
 
 	public static void main(String[] args) {

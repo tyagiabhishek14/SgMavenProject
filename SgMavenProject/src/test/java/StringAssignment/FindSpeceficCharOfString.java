@@ -28,7 +28,7 @@ public class FindSpeceficCharOfString {
 	public static void main(String[] args) {
 
 		FindSpeceficCharOfString obj = new FindSpeceficCharOfString();
-		int index = obj.findIndex("sssessleneiuem");
+		int index = obj.findIndex(" sssss");
 		System.out.println(index);
 
 	}

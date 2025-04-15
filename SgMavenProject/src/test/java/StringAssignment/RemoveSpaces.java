@@ -6,7 +6,7 @@ public class RemoveSpaces {
 	 * Remove all  spaces in a String .    For example  : “         Hello     
 	 * Everyone       “ .     Expected result: “HelloEveryone”.
 	 */
-	
+
 	public static String removeSpaces(String enteredString) {
 		if (enteredString == null || enteredString.isEmpty() || enteredString.equals(" ")) {
 			return "You have entered invalid String";
